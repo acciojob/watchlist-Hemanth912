@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Service
 
@@ -47,9 +48,9 @@ public class MovieService {
         return movielist;
     }
 
-    ArrayList<String> getAllMovies()
+    List getAllMovies()
     {
-        ArrayList<String> movieList = movieRepository.getAllMovies();
+        List<String> movieList = movieRepository.getAllMovies();
         return movieList;
     }
 
